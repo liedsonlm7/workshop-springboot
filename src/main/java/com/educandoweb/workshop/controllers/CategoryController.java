@@ -1,4 +1,4 @@
-package com.educandoweb.workshop.resources;
+package com.educandoweb.workshop.controllers;
 
 import com.educandoweb.workshop.entities.Category;
 import com.educandoweb.workshop.services.CategoryService;
@@ -13,7 +13,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping(value = "/categories")
-public class CategoryResource {
+public class CategoryController {
 
     @Autowired
     private CategoryService service;

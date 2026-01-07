@@ -1,9 +1,7 @@
-package com.educandoweb.workshop.resources;
+package com.educandoweb.workshop.controllers;
 
 import com.educandoweb.workshop.entities.Order;
-import com.educandoweb.workshop.entities.User;
 import com.educandoweb.workshop.services.OrderService;
-import com.educandoweb.workshop.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,7 +13,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping(value = "/orders")
-public class OrderResource {
+public class OrderController {
 
     @Autowired
     private OrderService service;
